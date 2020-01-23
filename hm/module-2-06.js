@@ -8,12 +8,12 @@ while (input !== null) {
     alert("Было введено не числоб попробуйте еще раз");
   } else {
     if (input !== null) {
-      numbers.push(input);
+      numbers.push(Number(input));
     }
   }
 }
 for (let i = 0; i < numbers.length; i++) {
-  total += Number(numbers[i]);
+  total += (numbers[i]);
 }
 console.log(numbers);
 alert(`Общая сумма чисел равна ${total}`);
